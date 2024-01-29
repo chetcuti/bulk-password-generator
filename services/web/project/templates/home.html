@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Bulk Password Generator</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}">
+</head>
+<body>
+<form method="POST" style="padding-top: 20px; padding-left: 20px">
+    <label><strong>Number of Passwords</strong></label><BR>
+    <input style="padding: 3px; margin-top: 3px;" id="number_of_passwords" name="number_of_passwords" placeholder="Default 30" size="16" autofocus><BR>
+    <BR>
+    <label><strong>Password Length</strong></label><BR>
+    <input style="padding: 3px; margin-top: 3px;" id="password_length" name="password_length" placeholder="Default 16" size="16"><BR>
+    <BR>
+    <label for="exclude_special">Exclude special characters?</label> <input id="exclude_special" type="checkbox" name="exclude_special" value="1"><BR>
+    <BR>
+    <input type="submit" value="Generate &gt;&gt;&gt;">
+</form>
+</body>
+</html>
